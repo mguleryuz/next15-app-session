@@ -94,7 +94,7 @@ export class AppSession<T extends SessionRecord = SessionRecord>
   }
 
   async all(): Promise<SessionData<T> | null | undefined> {
-    this._initID();
+    await this._initID();
     const data = await this.store?.get(this.sid);
     return data ?? {};
   }
@@ -115,7 +115,7 @@ export class AppSession<T extends SessionRecord = SessionRecord>
     await this.setAll(data);
   }
   async setAll(data: T): Promise<void> {
-    this._initID();
+    await this._initID();
     const existingID = await this._getID();
     if (!existingID || existingID == '') {
       await this.setCookie(this.name, this.encode(this.sid), {
