@@ -1,7 +1,7 @@
-import { SessionData, Store } from './types';
+import type { SessionData, Store } from './types';
 
 export class MemoryStore implements Store {
-  store: Map<string, string>;
+  store!: Map<string, string>;
   _instance?: MemoryStore;
 
   constructor() {

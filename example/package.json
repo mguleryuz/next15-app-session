@@ -1,5 +1,5 @@
 {
-  "name": "next-app-session-example",
+  "name": "next15-app-session-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,9 +14,9 @@
     "@types/react-dom": "18.2.7",
     "connect-redis": "^7.1.0",
     "ioredis": "^5.3.2",
-    "next": "13.4.10",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "next": "^15",
+    "react": "^19",
+    "react-dom": "^19",
+    "typescript": "^5"
   }
 }

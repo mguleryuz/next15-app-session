@@ -1,5 +1,5 @@
 import { promisify } from 'util';
-import { Store } from './types';
+import type { Store } from './types';
 
 export function promisifyStore(connectStore: any): Store {
   return {

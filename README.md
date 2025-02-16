@@ -1,8 +1,8 @@
-# Next-App-Session
-![npm](https://img.shields.io/npm/v/next-app-session)
-![npm bundle size](https://img.shields.io/bundlephobia/min/next-app-session) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/next-app-session)
+# next15-app-session
+![npm](https://img.shields.io/npm/v/next15-app-session)
+![npm bundle size](https://img.shields.io/bundlephobia/min/next15-app-session) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/next15-app-session)
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue?icon=typescript)
-![nextjs](https://badgen.net/badge/Built%20for/Next.js%20v13/purple?icon=vercel)
+![nextjs](https://badgen.net/badge/Built%20for/Next.js%20v15/purple?icon=vercel)
 ![nextjs](https://badgen.net/badge/Supports:/Redis/orange?icon=redis)
 
 This package is built to work with Next.js v13 App router and Server Components & Actions, additionally it also supports Pages router and middleware.
@@ -16,12 +16,12 @@ Package was inspired by [express-session](https://www.npmjs.com/package/express-
 
 1. Install package in your Next.js project
     ```
-    npm i next-app-session 
+    npm i next15-app-session 
     ```
 
 2. Create an initialisation file, for example: `lib/session.ts`, and write an exportable session variable like follows:
    ```typescript
-   import nextAppSession from 'next-app-session';
+   import nextAppSession from 'next15-app-session';
    
    // Your session data type
    type MySessionData = {
@@ -147,7 +147,7 @@ As we mentioned before by default the package will use `MemoryStore`, which is a
 
 3. Update the session config so its like follows with the port you're redis instance is running on:
 	```typescript
-	import nextAppSession, {promisifyStore} from 'next-app-session';
+	import nextAppSession, {promisifyStore} from 'next15-app-session';
   	import Redis from 'ioredis';
 	import RedisStoreFactory from 'connect-redis';
 
@@ -175,12 +175,12 @@ a Next.js demo app is located under `./example` of this repo.
 
 ## Contribution
 
-![GitHub issues](https://img.shields.io/github/issues/sweetscript/next-app-session)
+![GitHub issues](https://img.shields.io/github/issues/sweetscript/next15-app-session)
 
 Feedback, Issue reports, suggestions and contributions are welcome and appreciated.
 
-[https://github.com/sweetscript/next-app-session/issues](https://github.com/sweetscript/next-app-session/issues)
+[https://github.com/sweetscript/next15-app-session/issues](https://github.com/sweetscript/next15-app-session/issues)
 
-[https://github.com/sweetscript/next-app-session/discussions](https://github.com/sweetscript/next-app-session/discussions)
+[https://github.com/sweetscript/next15-app-session/discussions](https://github.com/sweetscript/next15-app-session/discussions)
 
 [majid@sweetscript.com](mailto:majid@sweetscript.com)
